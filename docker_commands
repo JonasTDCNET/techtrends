@@ -1,0 +1,41 @@
+## Docker commands used to build the application
+
+docker build -f Dockerfile -t techtrends .
+
+## Docker commands used to run the application
+
+docker run -d -p 7111:3111 --name techtrends techtrends
+
+## Docker commands used to get the application logs
+
+docker logs techtrends
+
+## Logs from the container running the TechTrends application
+
+2026-08-13 08:46:13,515 INFO 172.17.0.1 - - [13/Aug/2026 08:46:13] "GET / HTTP/1.1" 200 -
+2026-08-13 08:46:13,536 INFO 172.17.0.1 - - [13/Aug/2026 08:46:13] "GET /static/css/main.css HTTP/1.1" 200 -
+2026-08-13 08:46:13,635 INFO 172.17.0.1 - - [13/Aug/2026 08:46:13] "GET /favicon.ico HTTP/1.1" 404 -
+2026-08-13 08:46:21,143 INFO 172.17.0.1 - - [13/Aug/2026 08:46:21] "GET /healthz HTTP/1.1" 200 -
+2026-08-13 08:46:29,690 INFO 172.17.0.1 - - [13/Aug/2026 08:46:29] "GET /metrics HTTP/1.1" 200 -
+2026-08-13 08:51:49,904 INFO 172.17.0.1 - - [13/Aug/2026 08:51:49] "GET / HTTP/1.1" 200 -
+2026-08-13 08:51:49,922 INFO 172.17.0.1 - - [13/Aug/2026 08:51:49] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-08-13 08:58:12,936 INFO Article "2020 CNCF Annual Report" was retrieved!
+2026-08-13 08:58:12,939 INFO 172.17.0.1 - - [13/Aug/2026 08:58:12] "GET /1 HTTP/1.1" 200 -
+2026-08-13 08:58:12,956 INFO 172.17.0.1 - - [13/Aug/2026 08:58:12] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-08-13 08:58:20,253 INFO The about page was hit
+2026-08-13 08:58:20,255 INFO 172.17.0.1 - - [13/Aug/2026 08:58:20] "GET /about HTTP/1.1" 200 -
+2026-08-13 08:58:20,272 INFO 172.17.0.1 - - [13/Aug/2026 08:58:20] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-08-13 08:58:27,310 INFO 172.17.0.1 - - [13/Aug/2026 08:58:27] "GET / HTTP/1.1" 200 -
+2026-08-13 08:58:27,327 INFO 172.17.0.1 - - [13/Aug/2026 08:58:27] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-08-13 08:58:29,929 INFO 172.17.0.1 - - [13/Aug/2026 08:58:29] "GET /create HTTP/1.1" 200 -
+2026-08-13 08:58:29,946 INFO 172.17.0.1 - - [13/Aug/2026 08:58:29] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-08-13 08:58:41,464 INFO Article with title: "Test" was created!
+2026-08-13 08:58:41,465 INFO 172.17.0.1 - - [13/Aug/2026 08:58:41] "POST /create HTTP/1.1" 302 -
+2026-08-13 08:58:41,469 INFO 172.17.0.1 - - [13/Aug/2026 08:58:41] "GET / HTTP/1.1" 200 -
+2026-08-13 08:58:41,488 INFO 172.17.0.1 - - [13/Aug/2026 08:58:41] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-08-13 08:58:52,611 INFO 172.17.0.1 - - [13/Aug/2026 08:58:52] "GET /random HTTP/1.1" 404 -
+2026-08-13 08:59:05,579 INFO Article "Test" was retrieved!
+2026-08-13 08:59:05,580 INFO 172.17.0.1 - - [13/Aug/2026 08:59:05] "GET /7 HTTP/1.1" 200 -
+2026-08-13 08:59:05,596 INFO 172.17.0.1 - - [13/Aug/2026 08:59:05] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-08-13 08:59:07,984 INFO 172.17.0.1 - - [13/Aug/2026 08:59:07] "GET / HTTP/1.1" 200 -
+2026-08-13 08:59:08,000 INFO 172.17.0.1 - - [13/Aug/2026 08:59:08] "GET /static/css/main.css HTTP/1.1" 304 -
